@@ -104,7 +104,7 @@ public class Utils {
         } catch (ParserConfigurationException e) {
             System.out.println(
                     "ERROR: couldn't set http://apache.org/xml/features/disallow-doctype-decl");
-            e.printStackTrace();
+            //e.printStackTrace();
         }
 
         File tempDir = new File(TESTFILES_DIR);
@@ -116,7 +116,7 @@ public class Utils {
                 out.write("Test is a test file.\n");
                 out.close();
             } catch (FileNotFoundException e) {
-                e.printStackTrace();
+                //e.printStackTrace();
             }
             File testFile2 = new File(TESTFILES_DIR + "SafeText");
             try {

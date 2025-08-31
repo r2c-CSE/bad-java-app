@@ -59,7 +59,13 @@ public class BenchmarkTest00006 extends HttpServlet {
             argList.add("sh");
             argList.add("-c");
         }
-        argList.add("echo " + param);
+        //argList.add("echo " + param);
+        // Sanitize param to only allow alphanumeric characters and spaces. 
+        // Adjust the regex as needed depending on allowed input.
+        param = param.replaceAll("[^a-zA-Z0-9 ]", "");
+
+        argList.add("echo");
+        argList.add(param); // Pass param as a separate argument to avoid command injection
 
         ProcessBuilder pb = new ProcessBuilder();
 

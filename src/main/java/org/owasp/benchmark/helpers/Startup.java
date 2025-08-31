@@ -38,10 +38,10 @@ public class Startup implements ServletContextListener {
 
         } catch (ClassNotFoundException e) {
             System.out.println("ERROR: Could not find expected DatabaseHelper class.");
-            e.printStackTrace();
+            //e.printStackTrace();
         } catch (Exception e) {
             System.out.println("ERROR: Could not find or add BouncyCastle as crypto provider.");
-            e.printStackTrace();
+            //e.printStackTrace();
         }
 
         if (Security.getProvider("BC") == null)

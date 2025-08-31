@@ -172,7 +172,7 @@ public class LDAPServer {
             service.startup();
         } catch (Exception e) {
             System.out.println("Error at LDAP startup: " + e.getMessage());
-            e.printStackTrace();
+            //e.printStackTrace();
         }
 
         // Inject the foo root entry if it does not already exist
