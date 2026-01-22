@@ -1,3 +1,5 @@
+
+#This is a test line
 # This configuration simply enables anonymous scoring mode
 
 anonymousmode: true # If true, anonymize names of commercial tools
